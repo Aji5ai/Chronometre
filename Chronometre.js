@@ -91,3 +91,6 @@ const reset = () => {
     clearTimeout(timeout);
 }
 
+startBtn.addEventListener("click", demarrer);
+stopBtn.addEventListener("click", arreter);
+resetBtn.addEventListener("click", reset);

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    text-align: center;
+    margin-top: 150px;
+}
+
+h1, h2 {
+    font-size: 2.2em;
+    margin: 30px;
+}
+
+#chrono {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: orange;
+    color: white;
+    font-size: 2em;
+    border: solid 1px;
+    border-color: white;
+    border-radius: 5px;
+    width: 180px;
+    padding: 10px 8px;
+}
+
+.button:hover{
+    background-color: white;
+    color: orange;
+    transition: all 0.5s ease-in-out;
+}
+
+#stop {
+    margin-left:30px;
+    margin-right:30px;
+}
