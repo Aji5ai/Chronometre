@@ -2,47 +2,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: orange;
-    color: white;
+  }
+  
+  body {
+    background-color: #ffa404;
     font-family: 'Roboto', sans-serif;
-}
-
-#wrapper {
+    color:white;
+  }
+  
+  #wrapper { /* # c'est pour appeller les id et . pour les class */
     text-align: center;
-    margin-top: 150px;
-}
+    margin: 150px auto; /* Margin c'est entre le bord de la boite qui contient le texte et le reste de la page */
+  }
+  
+  h1, h2 {
+    font-weight: 100; /* épaisseur du texte */
+    font-size: 2.6em; /* Taille de police selon taille de l'écran */
+    margin: 30px; /* Pour espacer entre h1 et h2 */
+  }
 
-h1, h2 {
-    font-size: 2.2em;
-    margin: 30px;
-}
-
-#chrono {
+  #chrono {
     font-size: 2em;
-    margin-bottom: 30px;
-}
-
-button{
-    background-color: orange;
-    color: white;
-    font-size: 2em;
-    border: solid 1px;
+    margin-bottom: 30px; /* Sur le bas car y'a déjà en haut avec la margin du h2 qui fait de tous les côtés */
+  }
+  
+  button {
+    background-color: #ffa404;
+    font-size: 1.2em;
+    margin: 10px; /* Espace autour de la boite du bouton */
+    width: 180px; /* Largeur que prennent les boutons sur l'horizontale de la page */
+    padding: 18px 10px; /* Taille de la boite autour du texte */
+    border: solid 1px; /* épaisseur du contour des boutons */
     border-color: white;
-    border-radius: 5px;
-    width: 180px;
-    padding: 10px 8px;
-}
+    border-radius: 5px; /* Pour déterminer l'arrondi des coins, plus les px sont élevés pour ça va passer de rectangle à rond */
+    cursor: pointer; /* Pour passer le pointeur de la souris en pointeur, afin de signaler que c'est cliquable */
+    color :white;
+  }
 
-.button:hover{
-    background-color: white;
-    color: orange;
-    transition: all 0.5s ease-in-out;
-}
-
-#stop {
-    margin-left:30px;
-    margin-right:30px;
-}
+  button:not(:last-child) { /* Tous les boutons sauf le dernier selon l'ordre du code html */
+    margin-right: 15px; /* On donne une marge à droite aux deux premiers boutons pour les espacer entre eux */
+  }
+  
+  .button:hover { /* déclenche des effets quand la souris passe au dessus des boutons */
+    background-color:white; /* Le fond des boutons devient blanc */
+    color: #ffa404; /* La couleur du texte devient orange */
+    transition: all 0.5s ease-in-out; /* Le changement se fait progressivement au début, accelère et ralenti vers la fin */
+  }

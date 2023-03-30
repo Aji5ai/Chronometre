@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Chronometre.css">
-    <title>Chronomètre en ligne</title>
-</head>
+<html lang="fr"> <!-- Pour donner au navigateur la langue de la page -->
 
-<body>
-<div id="wrapper">
-    <h1>STOPWATCH</h1>
-    <h2>VANILLA JAVASCRIPT STOPWATCH</h2>
-    <div id="chrono">00:00:00:00</div>
-    <div id="buttons">
+  <head>
+    <meta charset="UTF-8" /> <!-- Codage de caractères classique avec accents également -->
+    <meta name="viewport" content="width=, initial-scale=1.0"/> <!-- Permet à l'affichage de s'adapter à la taille de l'écran de l'utilisateur -->
+    <link rel="stylesheet" href="Chronometre.css" /> <!-- Balise pour lier le html au code css associé -->
+    <title>Chronomètre</title> <!-- Titre de l'onglet dans le navigateur -->
+  </head>
+
+  <body>
+    <div id="wrapper"> <!-- Utile pour centrer tout ce bloc ensuite -->
+        <h1>STOPWATCH</h1>
+        <h2>VANILLA JAVASCRIPT STOPWATCH</h2>
+      <div id="chrono">00:00:00:00</div> <!-- L'affichage du chronomètre qui par défaut est à 0 -->
+      <div id="buttons"> <!-- Nos trois boutons -->
         <button id="start" class="button">Start</button>
         <button id="stop" class="button">Stop</button>
         <button id="reset" class="button">Reset</button>
+      </div>
     </div>
-</div>
-<script src="Chronometre.js"></script>
-</body>
+
+    <script src="Chronometre.js"></script> <!-- Lien au fichier js pour qu'il soit pris en compte dans le html. Sa place ici est importante car il se base sur les éléments au dessus pour fonctionner ! -->
+
+  </body>
 
 </html>
